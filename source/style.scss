@@ -115,7 +115,7 @@ body{
 
 .test {
     margin: 60px 0 0 0;
-    background: url(/img/background.png) top center   / contain no-repeat;
+    background: url(img/background.png) top center   / contain no-repeat;
     @media(max-width: $breakpoints1100){
         background-position: 0 15%;   
     }
@@ -259,12 +259,12 @@ body{
 
 
 .future__model-s-box {
-    background: url('/img/tesla_insaid.png') center / cover no-repeat;
+    background: url('img/tesla_insaid.png') center / cover no-repeat;
     background-position-y: 50px;
     width: 100%;    
     overflow: visible ;
     @media (min-width:1550px){
-        background: url('/img/tesla_insaid.png') right / cover no-repeat;
+        background: url('img/tesla_insaid.png') right / cover no-repeat;
         background-position-y: 100px;
     }
     
