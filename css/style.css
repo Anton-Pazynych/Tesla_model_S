@@ -344,14 +344,14 @@ body {
   }
 }
 .future__model-s-box {
-  background: url("img/tesla_insaid.png") center/cover no-repeat;
+  background: url("../img/tesla_insaid.png") center/cover no-repeat;
   background-position-y: 50px;
   width: 100%;
   overflow: visible;
 }
 @media (min-width: 1550px) {
   .future__model-s-box {
-    background: url("img/tesla_insaid.png") right/cover no-repeat;
+    background: url("../img/tesla_insaid.png") right/cover no-repeat;
     background-position-y: 100px;
   }
 }
