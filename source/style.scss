@@ -14,20 +14,36 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
 .wrapper {
 }
 
 .container {
 }
 
-
+.btc_red {
+    padding: 10px 10px ;
+    border:2px solid #E51937 ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #E51937;
+    &:hover{
+        background: #E51937;
+        color: #ffff;
+        transition: .5s;
+        border-radius: 5px;
+                }
+}
 
 
 
 
 
 //=================Header==========================
-
 .header {
     max-width: 1337px;
     height: 51px;
@@ -110,12 +126,10 @@ body{
     }
 }
 
-
 //==================Test Drive====================     
-
 .test {
     margin: 60px 0 0 0;
-    background: url(img/background.png) top center   / contain no-repeat;
+    background: url(../img/background.png) top center   / contain no-repeat;
     @media(max-width: $breakpoints1100){
         background-position: 0 15%;   
     }
@@ -213,20 +227,7 @@ body{
             }
     
             &_button {
-                padding: 10px 10px ;
-                border:2px solid #E51937 ;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 700;
-                font-size: 13px;
-                line-height: 16px;
-                text-transform: uppercase;
-                color: #E51937;
-                &:hover{
-                    background: #E51937;
-                    color: #ffffff;
-                    transition: .5s;
-                    border-radius: 5px;
-                }
+                
             }
         } 
     }
@@ -255,9 +256,8 @@ body{
         margin: 60px auto;
     }
 }
+
 //====================Future=======================
-
-
 .future__model-s-box {
     background: url('../img/tesla_insaid.png') center / cover no-repeat;
     background-position-y: 50px;
@@ -270,8 +270,6 @@ body{
     
 
 }
-
-
 
 .future {
 
@@ -331,15 +329,18 @@ body{
 
 }
 
-
 .info {
 
     &__box {
-        padding: 50px 35px;
+        padding: 50px 35px 50px 35px;
         @media(max-width:$breakpoints992){
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            padding: 50px 35px 50px 35px;
+        }
+        @media(max-width:$breakpoints768){
+            padding: 35px 30px;
         }
         
         
@@ -452,12 +453,257 @@ body{
             & img{
                 margin: 0 5px 0 0;
             }
+            & a{
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: rgb(255, 255, 255) !important;
+                
+            }
         }
 
         &_button {
             padding: 15px 40px;
             border: 2px solid #ffffff;
+            text-decoration-style: none;
+            color: #fff;
+            transition: .5s;
+            background: #E51937;
+            &:hover{
+                border-radius: 5px;
+                background: #fff;
+                color: #E51937;
+            }
         }
+                
+
+        
     }
 }
+
+//==================Safety==========================
+
+.safety {
+   //Info-block
+    &__body {
+        display: flex;
+        @media(max-width:$breakpoints992){
+            flex-direction: column;
+        }
+    }
+
+    &__info {
+        width: 440px;
+        min-width: 440px;
+        height: 100%;
+        background: #E51937;
+        padding: 50px 55px 60px 40px ; 
+        margin: 0 -80px 0 0;
+        @media(max-width:$breakpoints992){
+            order: 2;
+            width: 100%;
+            padding: 50px 55px 50px 40px ; 
+        }
+        @media(max-width:$breakpoints768){
+            padding: 35px 30px; 
+        }
+
+        &_body {
+            @media(max-width:$breakpoints992){
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:space-between;
+            }
+        }
+
+        &_text-box {
+            @media(max-width:$breakpoints992){
+                flex: 0 0 47%;
+            }
+            
+        }
+
+        &_tittle {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 37px;
+            color: #FFFFFF;
+        }
+
+        &_text {
+            margin: 12px 0 50px 0;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #FFFFFF;
+
+        }
+
+        &_rating-box {
+            @media(max-width:$breakpoints992){
+                flex: 0 0 47%;
+            }
+        }
+
+        &_rating-tittle {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 37px;
+            color: #FFFFFF;
+            margin: 0 0 30px 0;
+        }
+
+        &_rating-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 21px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin: 15px 0 0 0;
+        }
+
+        &_rating-list small {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 12px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            opacity: 0.7;
+        }
+
+
+        &_star {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0 60px 0;
+            @media(max-width:$breakpoints992){
+                display: none;
+            }
+        }
+
+        &_star-tittle {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 61px;
+            color: #FFFFFF;
+
+        }
+
+        &_star-subtittle {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 30px;
+            color: #FFFFFF;
+            
+        }
+
+        &_footer {
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            @media(max-width:$breakpoints992){
+                margin: 100px 0 60px 0;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        &_footer-more {
+            display: flex;
+            align-items: center;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            @media(max-width:$breakpoints992){
+                margin: 0 5% 0 0;
+            }
+            
+
+        }
+
+        &_footer-more-link{
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            
+        }
+
+        &_footer-more-link img{
+            margin: 0 10px 0 0;
+        }
+
+
+
+
+        &_footer-button a{
+            padding: 15px 36px;
+            border: 2px solid #fff;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            transition: 0.5s;
+            &:hover{
+                border-radius: 5px;
+                background: #fff;
+                color: #E51937;
+            }
+            @media(max-width:$breakpoints992){
+                margin: 0 0 0 5%;
+            }
+        }
+    }
+   //Image-block
+
+
+
+
+    &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 0 0 0px;
+        @media(max-width:$breakpoints992){
+            order: 1;
+            margin: 30px 0;
+        }
+    }
+
+    &__image-img {
+        width: 100%;
+        max-width: 100%;
+        background-position-x: -500px;
+    }
+
+}
+
+
 
