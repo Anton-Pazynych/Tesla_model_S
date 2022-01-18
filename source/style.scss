@@ -506,6 +506,8 @@ body{
         }
         @media(max-width:$breakpoints768){
             padding: 35px 30px; 
+            max-width: 440px;
+            min-width: 0px;
         }
 
         &_body {
@@ -520,6 +522,9 @@ body{
             @media(max-width:$breakpoints992){
                 flex: 0 0 47%;
             }
+            @media(max-width:$breakpoints768){
+                flex: 0 0 100%;
+            }
             
         }
 
@@ -530,6 +535,12 @@ body{
             font-size: 30px;
             line-height: 37px;
             color: #FFFFFF;
+            @media(max-width:$breakpoints768){
+                padding: 35px 30px; 
+            }
+            @media(max-width:$breakpoints768){
+                text-align: center;
+            }
         }
 
         &_text {
@@ -540,12 +551,18 @@ body{
             font-size: 15px;
             line-height: 18px;
             color: #FFFFFF;
+            @media(max-width:$breakpoints768){
+                text-align: center;
+            }
 
         }
 
         &_rating-box {
             @media(max-width:$breakpoints992){
                 flex: 0 0 47%;
+            }
+            @media(max-width:$breakpoints768){
+                display: none;
             }
         }
 
@@ -623,6 +640,9 @@ body{
                 margin: 100px 0 60px 0;
                 width: 100%;
                 justify-content: center;
+            }
+            @media(max-width:$breakpoints488){
+                display: none;
             }
         }
 
